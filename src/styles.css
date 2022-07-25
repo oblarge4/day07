@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.hidden{
+    display: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Special Elite', cursive;
+}
+
+input:focus{
+    outline-style: none;    
+}
+
+h1{
+    font-size: 28px;
+}
+
+.form-namepage input{
+    font-size: 36px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px 0px;
+}
+
+
+.form-invitation, .form-home{
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+ul{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+li{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.section-form form{
+    padding: 10px;
+    font-size: 22px; 
+}
+
+.section-form form input{
+    width: 5em;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 10px 5px 5px red;
+}
+
+.section-form button{
+    margin: 10px 0px;
+    font-size: 22px;
+}
+
+.section-form div{
+    margin: 20px 0px;
+}
+
+img{
+    width: 420px;
+}
+
+@keyframes message-animation{
+    100%{
+        opacity: 1;
+    }
+}
+
+.message-second{
+    opacity: 0;
+    animation: 3s message-animation ease-in-out forwards;
+    color: red;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.btn-reset{
+    font-size: 22px;
+}

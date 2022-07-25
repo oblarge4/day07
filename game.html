@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Stage</title>
+</head>
+<body>
+    <h1 class="stage-title"></h1>
+    <h1 class="game-title">Random Number Game</h1>
+    <ul>Rules of Game
+        <li>Put the number you want in units of 20 in the first column(min=20 max=100)</li>
+        <li>Put the number you think is correct in the second column.</li>
+        <li>At least three chances are given.</li>
+        <li>One chance are given for every 20 numbers.<br>ex)20 = 3 chances / 40 = 5 chances</li>         
+    </ul>
+    <div class="section-form">
+        <form class="form-machinenumber">
+            <label for="column-number">Generate a number between 1 and</label>
+            <input id="column-number" type="number" required min="20" step="20" max="100">
+            <button class="btn-machinenumber">Machine Number Choose!</button>
+            <div class="machinenumber_data"></div>        
+        </form>
+        <form class="form-usernumber">
+            <label for="column-userunmber">The number you choose</label>
+            <input id="column-userunmber" class="usernumber" type="number" required min="1">
+            <button class="btn-play">Play!</button>
+            <div class="usernumber_data"></div> 
+        </form>
+        <form action="winpage.html">
+            <button class="btn-win hidden"></button>
+        </form>
+        <form action="losepage.html">
+            <button class="btn-lose hidden"></button>
+        </form>
+    </div>
+    <script src="src/js/game.js"></script>
+</body>
+</html>
